@@ -2,9 +2,9 @@
 def max(list):
 
     if len(list) == 0:
-        return None
+        output = None
     elif len(list) == 1:
-        return list[0]
+        output = list[0]
     else:
         biggest = list[0]
 
@@ -12,28 +12,30 @@ def max(list):
             if i_item >= biggest:
                 biggest = i_item
 
-        return biggest
+        output = biggest
+     return output
 
 # Returns the smallest element from a list
 def min(list):
     if len(list) == 0:
-        return None
+        output = None
     elif len(list) == 1:
-        return list[0]
+        output = list[0]
     else:
         smallest = list[0]
         for i_item in list:
             if i_item < smallest:
                 smallest = i_item
+        output = smallest
+    return output
 
-    return smallest
 # Function which checks if element is in the list
 def contains(list, x):
     for i_item in list:
-
         if i_item == x:
-            return 1
-    return 0
+            output = 1
+    output = 0
+    return output
 
 def sort(list, from_bigger_or_smaller):
     if len(list) == 0:
