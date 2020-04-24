@@ -15,8 +15,9 @@ def bubble_sort(list):
                 if copy_list[i_index] > copy_list[i_index+1]:
                     copy_list[i_index], copy_list[i_index+1] = copy_list[i_index+1], copy_list[i_index]
             number_of_elements = number_of_elements-1
-        output = copy_list
-       return output
+        sorted_list = copy_list
+        output = sorted_list
+     return output
 
 list_ = [5, 1, 4, 7, 9, 3, 8, 2]
 print(bubble_sort(list_))
